@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "elliptic": "^6.5.4",
+    "jshashes": "^1.0.8",
+    "uuid": "^9.0.0"
+  },
+  "name": "tp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
