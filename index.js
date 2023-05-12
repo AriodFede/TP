@@ -1,6 +1,7 @@
 const Node = require('./node');
 const Transaction = require('./transaction');
 const CompositeTransaction = require('./compositeTransaction');
+const Wallet = require('./wallet');
 
 const node = new Node();
 
@@ -27,6 +28,7 @@ const EC = require('elliptic').ec;
 const ec = new EC('secp256k1');
 
 const myKey = ec.keyFromPrivate('my_private_key');
+const signature = myWallet.signTransaction(transaction.outputs[0].address, amount);
 
 const transaction1 = new Transaction('address1', 'address2', 100);
 transaction1.signTransaction(myKey);

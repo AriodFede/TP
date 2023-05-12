@@ -18,7 +18,7 @@ class Transaction {
 
   signTransaction(signingKey) {
     if (signingKey.getPublic('hex') !== this.fromAddress) {
-      throw new Error('No se puede firmar una transacción de otra billetera');
+      throw new Error('No se puede firmar una transacción con una clave privada que no corresponde a la dirección de la billetera de origen');
     }
 
     const hashTx = this.calculateHash();
