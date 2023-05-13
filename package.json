@@ -1,17 +1,23 @@
 {
-  "dependencies": {
-    "crypto-js": "^4.1.1",
-    "elliptic": "^6.5.4",
-    "jshashes": "^1.0.8",
-    "uuid": "^9.0.0"
-  },
-  "name": "tp",
+  "name": "blockchainunlp",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A basic blockchain app in NodeJS",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/horaco11/blockchain_unlp.git"
+  },
+  "author": "Alessio Lucas, Ansaldi Horacio, Aranda Tania",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/horaco11/blockchain_unlp/issues"
+  },
+  "homepage": "https://github.com/horaco11/blockchain_unlp#readme",
+  "dependencies": {
+    "jshashes": "^1.0.8",
+    "uuidv4": "^6.2.13"
+  }
 }
