@@ -1,0 +1,42 @@
++----------------+               +----------------+
+|   Transaction  |               |    Blockchain  |
++----------------+               +----------------+
+| - sender       |               | - chain        |
+| - recipient    |               | - difficulty   |
+| - amount       |               | - miningReward |
+| - timestamp    |               | - hashingAlgo  |
+| - hash         |               | - pendingTransactions |
+| - previousHash |               +----------------+
+| - height       |
++----------------+
+        |
+        | 1..*
+        |
+        V
++----------------+
+|  TransactionList|
++----------------+
+| - transactions |
++----------------+
+        |
+        | 1
+        |
+        V
++----------------+
+|     Block      |
++----------------+
+| - transactions |
+| - timestamp    |
+| - hash         |
+| - previousHash |
+| - nonce        |
++----------------+
+        |
+        | 1..*
+        |
+        V
++----------------+
+|      Node      |
++----------------+
+| - blockchain   |
++----------------+
